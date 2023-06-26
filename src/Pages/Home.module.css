@@ -1,0 +1,18 @@
+
+
+.homeMovie h1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #A288E3;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+}
+
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+

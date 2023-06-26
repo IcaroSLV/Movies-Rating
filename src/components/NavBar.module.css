@@ -1,0 +1,43 @@
+.headerMovie {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    margin-bottom: 1em;
+    height: 4em;
+}
+
+.headerMovie h2 {
+    font-size: 2em;
+    margin: 0 2em;
+}
+
+.headerMovie form {
+    margin: 0 3em;
+}
+
+.headerMovie form input {
+    padding: .5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1em;
+}
+
+.headerMovie form button {
+    position: absolute;
+    padding: .2em .3em;
+    border-radius: 5px;
+    border: none;
+    background-color: #A288E3;
+    font-size: 1.2em;
+    margin: 0;
+    height: min-content;
+    cursor: pointer;
+    
+}
+
+.headerMovie form button:hover {
+    color: white;
+}
+
