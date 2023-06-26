@@ -6,15 +6,15 @@
     background-color: #111;
     margin-bottom: 1em;
     height: 4em;
+    padding: 0 1em;
 }
 
 .headerMovie h2 {
-    font-size: 2em;
-    margin: 0 2em;
+    font-size: 1.5rem;
 }
 
 .headerMovie form {
-    margin: 0 3em;
+    margin: 0 2em;
 }
 
 .headerMovie form input {
@@ -41,3 +41,32 @@
     color: white;
 }
 
+
+
+@media screen and (max-width: 520px) {
+    .headerMovie h2 {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .headerMovie h2 {
+        font-size: .7rem;
+    }
+
+    .headerMovie form input {
+        width: 10em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .headerMovie h2 {
+        font-size: .7rem;
+    }
+
+    .headerMovie form input {
+        width: 10em;
+    }
+}

@@ -88,3 +88,25 @@
     border: 1px solid white;
 
 }
+
+@media screen and (max-width: 425px) {
+    .CardContainer {
+        width: 22em;
+        height: 23em;
+    }
+
+    .imgMovie img {
+        width: 18em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .CardContainer {
+        width: 19em;
+        height: 20em;
+    }
+    .imgMovie {
+        height: 10em;
+    }
+
+}
