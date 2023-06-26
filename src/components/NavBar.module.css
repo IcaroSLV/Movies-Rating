@@ -6,7 +6,7 @@
     background-color: #111;
     margin-bottom: 1em;
     height: 4em;
-    padding: 0 1em;
+    padding: 0 3em;
 }
 
 .headerMovie h2 {
@@ -44,6 +44,10 @@
 
 
 @media screen and (max-width: 520px) {
+    .headerMovie {
+        padding: 0 2em;
+    }
+    
     .headerMovie h2 {
         font-size: 1rem;
     }
@@ -51,6 +55,9 @@
 }
 
 @media screen and (max-width: 375px) {
+    .headerMovie {
+        padding: 0 1em;
+    }
     .headerMovie h2 {
         font-size: .7rem;
     }
