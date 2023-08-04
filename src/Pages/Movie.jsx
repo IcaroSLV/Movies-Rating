@@ -8,23 +8,24 @@ import { BsStarFill, BsFillPeopleFill, BsFillClockFill } from 'react-icons/bs'
 const movieDETAILS = import.meta.env.VITE_API
 const apiKEY = import.meta.env.VITE_API_KEY
 const movieIMG = import.meta.env.VITE_IMG
+const movieLanguage = import.meta.env.VITE_LANGUAGE
 
 function Movie() {
+
     const {id} = useParams()
     const [movieData, setMovieData] = useState({});
 
     useEffect(() => {
-
-        fetch(`${movieDETAILS}${id}?${apiKEY}`)
+        fetch(`${movieDETAILS}${id}?${apiKEY}&${movieLanguage}`)
         .then((resp) => resp.json())
         .then((data) => {
             setMovieData(data)
         })
-
     },[])
-    
-    
 
+
+
+    
     return(
         <div className={styles.movieDetailsContainer}>
             <div className={styles.movieImg}>
@@ -41,7 +42,7 @@ function Movie() {
                 </div>
 
                 <div className={styles.populatiryDetails}>
-                    <p><span><BsStarFill/></span> {movieData.vote_average} / 10</p>
+                    <p><span><BsStarFill/></span> {(movieData.vote_average)} / 10</p>
                     <p><span><BsFillPeopleFill/></span> {movieData.popularity}</p>
                 </div>
 

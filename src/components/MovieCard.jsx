@@ -18,8 +18,8 @@ function MovieCard({movieData, showLink = true}){
             <div className={styles.descriptionMovie}>
                 <h2>{movieData.title}</h2>
                 <div>
-                    <p><span><BsStarFill/></span> {movieData.vote_average} / 10</p>
-                    <p><span><BsFillPeopleFill/></span> {movieData.popularity.toLocaleString('pt-BR')}</p>
+                    <p><span><BsStarFill/></span> {(movieData.vote_average).toFixed(1)} / 10</p>
+                    <p><span><BsFillPeopleFill/></span> {movieData.popularity}</p>
                 </div>
             </div>
             <div className={styles.movieButton}>
